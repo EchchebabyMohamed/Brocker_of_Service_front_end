@@ -111,8 +111,26 @@
     font-weight: 600 !important;
   }
 }
-.btn{
-  border-radius: unset;
-  border: none;
-  background: #FD5D14;
+/*.btn{*/
+/*  border-radius: unset;*/
+/*  border: none;*/
+/*  background: #FD5D14;*/
+/*}*/
+
+.service-item .service-icon {
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.service-item .service-icon i {
+  transition: .2s;
+}
+
+.service-item:hover .service-icon i {
+  font-size: 60px;
 }
