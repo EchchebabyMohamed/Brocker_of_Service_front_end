@@ -6,6 +6,10 @@ import { NavbareComponent } from './components/navbare/navbare.component';
 import { WorkersComponent } from './components/workers/workers.component';
 import { ServicesComponent } from './components/services/services.component';
 import { HomeComponent } from './components/home/home.component';
+import {RouterModule} from "@angular/router";
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './components/login/login.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +17,14 @@ import { HomeComponent } from './components/home/home.component';
     NavbareComponent,
     WorkersComponent,
     ServicesComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

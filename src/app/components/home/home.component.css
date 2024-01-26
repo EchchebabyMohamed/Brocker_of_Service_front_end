@@ -134,3 +134,56 @@
 .service-item:hover .service-icon i {
   font-size: 60px;
 }
+
+
+
+
+
+
+
+
+
+.btn-primary {
+  color: #000;
+  background-color: #FD5D14;
+  border-color: #FD5D14
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #fd7537;
+  border-color: #fd6d2c
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+  color: #000;
+  background-color: #fd7537;
+  border-color: #fd6d2c;
+  box-shadow: 0 0 0 .25rem rgba(215, 79, 17, 0.5)
+}
+
+.btn-check:checked+.btn-primary,
+.btn-check:active+.btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show>.btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: #fd7d43;
+  border-color: #fd6d2c
+}
+
+.btn-check:checked+.btn-primary:focus,
+.btn-check:active+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .25rem rgba(215, 79, 17, 0.5)
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+  color: #000;
+  background-color: #FD5D14;
+  border-color: #FD5D14
+}

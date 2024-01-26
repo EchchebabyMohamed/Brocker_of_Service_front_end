@@ -99,12 +99,20 @@
           ]
         },
         {
+          "file": "src/app/app-routing.module.ts",
+          "hash": "16504230409776939578",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
           "file": "src/app/app.component.css",
           "hash": "3244421341483603138"
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "2453502566824052149"
+          "hash": "13276503331112778341"
         },
         {
           "file": "src/app/app.component.spec.ts",
@@ -122,19 +130,20 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "2852913726340329144",
+          "hash": "5539957095306952043",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/platform-browser"
+            "npm:@angular/platform-browser",
+            "npm:@angular/router"
           ]
         },
         {
           "file": "src/app/components/home/home.component.css",
-          "hash": "3699270786388113713"
+          "hash": "7316949368646007855"
         },
         {
           "file": "src/app/components/home/home.component.html",
-          "hash": "9574565396674663803"
+          "hash": "3222924847696564150"
         },
         {
           "file": "src/app/components/home/home.component.spec.ts",
@@ -156,7 +165,7 @@
         },
         {
           "file": "src/app/components/navbare/navbare.component.html",
-          "hash": "370769434919617591"
+          "hash": "793799165928979629"
         },
         {
           "file": "src/app/components/navbare/navbare.component.spec.ts",
@@ -178,7 +187,7 @@
         },
         {
           "file": "src/app/components/services/services.component.html",
-          "hash": "14353474174225734510"
+          "hash": "15190905934109620459"
         },
         {
           "file": "src/app/components/services/services.component.spec.ts",
@@ -251,6 +260,30 @@
         {
           "file": "src/assets/images/logo.png",
           "hash": "3150469796158341824"
+        },
+        {
+          "file": "src/assets/images/service-1.jpg",
+          "hash": "14525447234089327690"
+        },
+        {
+          "file": "src/assets/images/service-2.jpg",
+          "hash": "14029524959532624573"
+        },
+        {
+          "file": "src/assets/images/service-3.jpg",
+          "hash": "5935258206023409357"
+        },
+        {
+          "file": "src/assets/images/service-4.jpg",
+          "hash": "12641216544913633527"
+        },
+        {
+          "file": "src/assets/images/service-5.jpg",
+          "hash": "8651790702092339216"
+        },
+        {
+          "file": "src/assets/images/service-6.jpg",
+          "hash": "3271891240449577407"
         },
         {
           "file": "src/assets/images/signature.jpg",
