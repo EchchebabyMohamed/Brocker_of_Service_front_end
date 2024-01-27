@@ -100,7 +100,7 @@
         },
         {
           "file": "src/app/app-routing.module.ts",
-          "hash": "16504230409776939578",
+          "hash": "10009236857949272503",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -130,11 +130,33 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "5539957095306952043",
+          "hash": "803813502232824316",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
             "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/components/footer/footer.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/footer/footer.component.html",
+          "hash": "3043582904107109169"
+        },
+        {
+          "file": "src/app/components/footer/footer.component.spec.ts",
+          "hash": "1944692066901072230",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/footer/footer.component.ts",
+          "hash": "9444302710946122126",
+          "deps": [
+            "npm:@angular/core"
           ]
         },
         {
@@ -160,12 +182,34 @@
           ]
         },
         {
+          "file": "src/app/components/login/login.component.css",
+          "hash": "5532338471439743137"
+        },
+        {
+          "file": "src/app/components/login/login.component.html",
+          "hash": "18173577576717616167"
+        },
+        {
+          "file": "src/app/components/login/login.component.spec.ts",
+          "hash": "15222502735042189921",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/login/login.component.ts",
+          "hash": "7475457346790200719",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/components/navbare/navbare.component.css",
           "hash": "12862448906091300231"
         },
         {
           "file": "src/app/components/navbare/navbare.component.html",
-          "hash": "793799165928979629"
+          "hash": "16470670661007508157"
         },
         {
           "file": "src/app/components/navbare/navbare.component.spec.ts",

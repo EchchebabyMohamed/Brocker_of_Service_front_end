@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {LoginServiceService} from "../../services/login-service.service";
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,8 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  formsGroup!:FormGroup;
+  constructor(private login:LoginServiceService,private fb:FormBuilder) {
+  }
 
   ngOnInit(): void {
+    this.formsGroup = this.fb.group({
+      username: ['',Validators.required],
+      password:['',Validators.required]
+    })
+
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
     const container = document.getElementById('container');
@@ -29,4 +39,13 @@ export class LoginComponent {
     }
   }
 
+  loginfunction() {
+    // @ts-ignore
+    this.login.getjwt(this.formsGroup.get('username').value,this.formsGroup.get('password').value).subscribe({
+      next : rs => {
+        console.log(rs)
+      }
+    })
+
+  }
 }
