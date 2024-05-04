@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LoginServiceService} from "../../services/login-service.service";
 
 @Component({
   selector: 'app-navbare',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbare.component.css']
 })
 export class NavbareComponent {
-
+  constructor(public loginservice: LoginServiceService) {
+  }
 }

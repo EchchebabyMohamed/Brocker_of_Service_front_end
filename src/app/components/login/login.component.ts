@@ -44,6 +44,8 @@ export class LoginComponent {
     this.login.getjwt(this.formsGroup.get('username').value,this.formsGroup.get('password').value).subscribe({
       next : rs => {
         console.log(rs)
+        // @ts-ignore
+        console.log(this.login.decodeToken(rs['access-token']))
       }
     })
 

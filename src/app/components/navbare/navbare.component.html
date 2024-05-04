@@ -57,7 +57,7 @@
             <a href="detail.html" class="dropdown-item">Blog Detail</a>
           </div>
         </div>
-        <a href="contact.html" class="nav-item nav-link">Contact</a>
+        <a *ngIf="loginservice.isLoggedIn" routerLink="/logout" class="nav-item nav-link">Log out</a>
         <div class="nav-item nav-link me-5" ></div>
         <div class="nav-item nav-link me-5" ></div>
 
