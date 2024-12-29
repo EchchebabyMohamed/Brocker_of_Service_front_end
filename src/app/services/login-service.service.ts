@@ -8,6 +8,7 @@ import {Router} from "@angular/router";
   providedIn: 'root'
 })
 export class LoginServiceService {
+  idClient =-1
   isLoggedIn = false
   isAdmin = false
   token!: String
@@ -23,15 +24,17 @@ export class LoginServiceService {
     let headers = {
       headers : new HttpHeaders().set("Content-Type", "application/x-www-form-urlencoded")
     }
-    return this.http.post("http://localhost:8080/login",params,headers);
+    return this.http.post("http://localhost:8085/login",params,headers);
   }
   decodeToken(token: string): any {
     try {
+      localStorage.setItem('jwtToken', token);
       this.isLoggedIn =true
       // @ts-ignore
       const decoded:any = jwtDecode(token);
       this.username_aut = decoded.sub
       this.roles = decoded.scop
+      this.idClient=decoded.id
       this.token = token
       if (this.roles.includes("ROLE_ADMIN")){
         this.isAdmin = true

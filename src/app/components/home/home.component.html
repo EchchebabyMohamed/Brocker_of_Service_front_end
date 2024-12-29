@@ -39,7 +39,8 @@
 <div class="container-fluid py-6 px-5">
   <div class="row g-5">
     <div class="col-lg-7">
-      <h1 class="display-5 text-uppercase mb-4">NOUS SOMMES <span class="text-primary">LE LEADER</span> DE LA CONSTRUCTION </h1>
+      <h1 class="display-5 text-uppercase mb-4">NOUS SOMMES <span class="text-primary">LE LEADER</span> DE LA
+        CONSTRUCTION </h1>
       <h4 class="text-uppercase mb-3 text-body">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum
         tempor sit diam amet diam et eos labore</h4>
       <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua
@@ -78,90 +79,20 @@
       Services</h1>
   </div>
   <div class="row g-5">
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6" *ngFor="let item of _services">
       <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-        <img class="img-fluid" src="assets/images/service-1.jpg" alt="">
+        <img class="img-fluid" [src]="item.img" alt="">
         <div class="service-icon bg-white">
           <i class="fa fa-3x fa-building text-primary"></i>
         </div>
         <div class="px-4 pb-4">
-          <h4 class="text-uppercase mb-3">Building Construction</h4>
-          <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet
-            magna elitr amet kasd diam duo</p>
+          <h4 class="text-uppercase mb-3">{{ item.nom }}</h4>
+          <p>{{item.description}}</p>
           <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-        <img class="img-fluid" src="assets/images/service-2.jpg" alt="">
-        <div class="service-icon bg-white">
-          <i class="fa fa-3x fa-home text-primary"></i>
-        </div>
-        <div class="px-4 pb-4">
-          <h4 class="text-uppercase mb-3">House Renovation</h4>
-          <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet
-            magna elitr amet kasd diam duo</p>
-          <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-        <img class="img-fluid" src="assets/images/service-3.jpg" alt="">
-        <div class="service-icon bg-white">
-          <i class="fa fa-3x fa-drafting-compass text-primary"></i>
-        </div>
-        <div class="px-4 pb-4">
-          <h4 class="text-uppercase mb-3">Architecture Design</h4>
-          <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet
-            magna elitr amet kasd diam duo</p>
-          <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-        <img class="img-fluid" src="assets/images/service-4.jpg" alt="">
-        <div class="service-icon bg-white">
-          <i class="fa fa-3x fa-palette text-primary"></i>
-        </div>
-        <div class="px-4 pb-4">
-          <h4 class="text-uppercase mb-3">Interior Design</h4>
-          <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet
-            magna elitr amet kasd diam duo</p>
-          <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-        <img class="img-fluid" src="assets/images/service-5.jpg" alt="">
-        <div class="service-icon bg-white">
-          <i class="fa fa-3x fa-tools text-primary"></i>
-        </div>
-        <div class="px-4 pb-4">
-          <h4 class="text-uppercase mb-3">Fixing & Support</h4>
-          <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet
-            magna elitr amet kasd diam duo</p>
-          <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-        <img class="img-fluid" src="assets/images/service-6.jpg" alt="">
-        <div class="service-icon bg-white">
-          <i class="fa fa-3x fa-paint-brush text-primary"></i>
-        </div>
-        <div class="px-4 pb-4">
-          <h4 class="text-uppercase mb-3">Painting</h4>
-          <p>Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut amet sed erat sed sed amet
-            magna elitr amet kasd diam duo</p>
-          <a class="btn text-primary" href="">Read More <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
+
   </div>
 </div>
 <!-- Services End -->
@@ -223,229 +154,126 @@
 
 
 <!-- Portfolio Start -->
-<div class="container-fluid bg-light py-6 px-5">
-  <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-    <h1 class="display-5 text-uppercase mb-4">Some Of Our <span class="text-primary">Popular</span> Dream
-      Projects</h1>
-  </div>
-  <div class="row gx-5">
-    <div class="col-12 text-center">
-      <div class="d-inline-block bg-dark-radial text-center pt-4 px-5 mb-5">
-        <ul class="list-inline mb-0" id="portfolio-flters">
-          <li class="btn btn-outline-primary bg-white p-2 active mx-2 mb-4" data-filter="*">
-            <img src="img/portfolio-1.jpg" style="width: 150px; height: 100px;">
-            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center"
-                 style="background: rgba(4, 15, 40, .3);">
-              <h6 class="text-white text-uppercase m-0">All</h6>
-            </div>
-          </li>
-          <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".first">
-            <img src="img/portfolio-2.jpg" style="width: 150px; height: 100px;">
-            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center"
-                 style="background: rgba(4, 15, 40, .3);">
-              <h6 class="text-white text-uppercase m-0">Construction</h6>
-            </div>
-          </li>
-          <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".second">
-            <img src="img/portfolio-3.jpg" style="width: 150px; height: 100px;">
-            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center"
-                 style="background: rgba(4, 15, 40, .3);">
-              <h6 class="text-white text-uppercase m-0">Renovation</h6>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="row g-5 portfolio-container">
-    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-      <div class="position-relative portfolio-box">
-        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-        <a class="portfolio-title shadow-sm" href="">
-          <p class="h4 text-uppercase">Project Name</p>
-          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,
-                            Country</span>
-        </a>
-        <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">
-          <i class="bi bi-plus text-white"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-      <div class="position-relative portfolio-box">
-        <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-        <a class="portfolio-title shadow-sm" href="">
-          <p class="h4 text-uppercase">Project Name</p>
-          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,
-                            Country</span>
-        </a>
-        <a class="portfolio-btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">
-          <i class="bi bi-plus text-white"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-      <div class="position-relative portfolio-box">
-        <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-        <a class="portfolio-title shadow-sm" href="">
-          <p class="h4 text-uppercase">Project Name</p>
-          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,
-                            Country</span>
-        </a>
-        <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">
-          <i class="bi bi-plus text-white"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-      <div class="position-relative portfolio-box">
-        <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-        <a class="portfolio-title shadow-sm" href="">
-          <p class="h4 text-uppercase">Project Name</p>
-          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,
-                            Country</span>
-        </a>
-        <a class="portfolio-btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">
-          <i class="bi bi-plus text-white"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
-      <div class="position-relative portfolio-box">
-        <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-        <a class="portfolio-title shadow-sm" href="">
-          <p class="h4 text-uppercase">Project Name</p>
-          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,
-                            Country</span>
-        </a>
-        <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">
-          <i class="bi bi-plus text-white"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
-      <div class="position-relative portfolio-box">
-        <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-        <a class="portfolio-title shadow-sm" href="">
-          <p class="h4 text-uppercase">Project Name</p>
-          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,
-                            Country</span>
-        </a>
-        <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">
-          <i class="bi bi-plus text-white"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<!--<div class="container-fluid bg-light py-6 px-5">-->
+<!--  <div class="text-center mx-auto mb-5" style="max-width: 600px;">-->
+<!--    <h1 class="display-5 text-uppercase mb-4">Some Of Our <span class="text-primary">Popular</span> Dream-->
+<!--      Projects</h1>-->
+<!--  </div>-->
+<!--  <div class="row gx-5">-->
+<!--    <div class="col-12 text-center">-->
+<!--      <div class="d-inline-block bg-dark-radial text-center pt-4 px-5 mb-5">-->
+<!--        <ul class="list-inline mb-0" id="portfolio-flters">-->
+<!--          <li class="btn btn-outline-primary bg-white p-2 active mx-2 mb-4" data-filter="*">-->
+<!--            <img src="img/portfolio-1.jpg" style="width: 150px; height: 100px;">-->
+<!--            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center"-->
+<!--                 style="background: rgba(4, 15, 40, .3);">-->
+<!--              <h6 class="text-white text-uppercase m-0">All</h6>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".first">-->
+<!--            <img src="img/portfolio-2.jpg" style="width: 150px; height: 100px;">-->
+<!--            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center"-->
+<!--                 style="background: rgba(4, 15, 40, .3);">-->
+<!--              <h6 class="text-white text-uppercase m-0">Construction</h6>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--          <li class="btn btn-outline-primary bg-white p-2 mx-2 mb-4" data-filter=".second">-->
+<!--            <img src="img/portfolio-3.jpg" style="width: 150px; height: 100px;">-->
+<!--            <div class="position-absolute top-0 start-0 end-0 bottom-0 m-2 d-flex align-items-center justify-content-center"-->
+<!--                 style="background: rgba(4, 15, 40, .3);">-->
+<!--              <h6 class="text-white text-uppercase m-0">Renovation</h6>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="row g-5 portfolio-container">-->
+<!--    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">-->
+<!--      <div class="position-relative portfolio-box">-->
+<!--        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">-->
+<!--        <a class="portfolio-title shadow-sm" href="">-->
+<!--          <p class="h4 text-uppercase">Project Name</p>-->
+<!--          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,-->
+<!--                            Country</span>-->
+<!--        </a>-->
+<!--        <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">-->
+<!--          <i class="bi bi-plus text-white"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">-->
+<!--      <div class="position-relative portfolio-box">-->
+<!--        <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">-->
+<!--        <a class="portfolio-title shadow-sm" href="">-->
+<!--          <p class="h4 text-uppercase">Project Name</p>-->
+<!--          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,-->
+<!--                            Country</span>-->
+<!--        </a>-->
+<!--        <a class="portfolio-btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">-->
+<!--          <i class="bi bi-plus text-white"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">-->
+<!--      <div class="position-relative portfolio-box">-->
+<!--        <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">-->
+<!--        <a class="portfolio-title shadow-sm" href="">-->
+<!--          <p class="h4 text-uppercase">Project Name</p>-->
+<!--          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,-->
+<!--                            Country</span>-->
+<!--        </a>-->
+<!--        <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">-->
+<!--          <i class="bi bi-plus text-white"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">-->
+<!--      <div class="position-relative portfolio-box">-->
+<!--        <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">-->
+<!--        <a class="portfolio-title shadow-sm" href="">-->
+<!--          <p class="h4 text-uppercase">Project Name</p>-->
+<!--          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,-->
+<!--                            Country</span>-->
+<!--        </a>-->
+<!--        <a class="portfolio-btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">-->
+<!--          <i class="bi bi-plus text-white"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">-->
+<!--      <div class="position-relative portfolio-box">-->
+<!--        <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">-->
+<!--        <a class="portfolio-title shadow-sm" href="">-->
+<!--          <p class="h4 text-uppercase">Project Name</p>-->
+<!--          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,-->
+<!--                            Country</span>-->
+<!--        </a>-->
+<!--        <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">-->
+<!--          <i class="bi bi-plus text-white"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">-->
+<!--      <div class="position-relative portfolio-box">-->
+<!--        <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">-->
+<!--        <a class="portfolio-title shadow-sm" href="">-->
+<!--          <p class="h4 text-uppercase">Project Name</p>-->
+<!--          <span class="text-body"><i class="fa fa-map-marker-alt text-primary me-2"></i>Location, City,-->
+<!--                            Country</span>-->
+<!--        </a>-->
+<!--        <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">-->
+<!--          <i class="bi bi-plus text-white"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 <!-- Portfolio End -->
 
 
 <!-- Team Start -->
-<div class="container-fluid py-6 px-5">
-  <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-    <h1 class="display-5 text-uppercase mb-4">We Are <span class="text-primary">Professional & Expert</span>
-      Workers</h1>
-  </div>
-  <div class="row g-5">
-    <div class="col-xl-3 col-lg-4 col-md-6">
-      <div class="row g-0">
-        <div class="col-10" style="min-height: 300px;">
-          <div class="position-relative h-100">
-            <img class="position-absolute w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="bg-light p-4">
-            <h4 class="text-uppercase">Adam Phillips</h4>
-            <span>CEO & Founder</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6">
-      <div class="row g-0">
-        <div class="col-10" style="min-height: 300px;">
-          <div class="position-relative h-100">
-            <img class="position-absolute w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="bg-light p-4">
-            <h4 class="text-uppercase">Dylan Adams</h4>
-            <span>Civil Engineer</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6">
-      <div class="row g-0">
-        <div class="col-10" style="min-height: 300px;">
-          <div class="position-relative h-100">
-            <img class="position-absolute w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="bg-light p-4">
-            <h4 class="text-uppercase">Jhon Doe</h4>
-            <span>Interior Designer</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6">
-      <div class="row g-0">
-        <div class="col-10" style="min-height: 300px;">
-          <div class="position-relative h-100">
-            <img class="position-absolute w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="bg-light p-4">
-            <h4 class="text-uppercase">Josh Dunn</h4>
-            <span>Painter</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- Team End -->
 
 
@@ -457,7 +285,7 @@
   </div>
   <div class="row gx-0 align-items-center">
     <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-      <img class="img-fluid w-100 h-100" src="img/testimonial.jpg">
+      <img class="img-fluid w-100 h-100" src="assets/images/service-1.jpg">
     </div>
     <div class="col-xl-8 col-lg-7 col-md-12">
       <div class="testimonial bg-light">
@@ -465,7 +293,7 @@
           <div class="row gx-4 align-items-center">
             <div class="col-xl-4 col-lg-5 col-md-5">
               <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0"
-                   src="img/testimonial-1.jpg" alt="">
+                   src="assets/images/service-2.jpg" alt="">
             </div>
             <div class="col-xl-8 col-lg-7 col-md-7">
               <h4 class="text-uppercase mb-0">Client Name</h4>
@@ -480,7 +308,7 @@
           <div class="row gx-4 align-items-center">
             <div class="col-xl-4 col-lg-5 col-md-5">
               <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0"
-                   src="img/testimonial-2.jpg" alt="">
+                   src="assets/images/service-6.jpg" alt="">
             </div>
             <div class="col-xl-8 col-lg-7 col-md-7">
               <h4 class="text-uppercase mb-0">Client Name</h4>
@@ -502,18 +330,18 @@
 
 <!-- Blog Start -->
 <div class="container-fluid py-6 px-5">
-  <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-    <h1 class="display-5 text-uppercase mb-4">Latest <span class="text-primary">Articles</span> From Our Blog
-      Post</h1>
-  </div>
+  <!--  <div class="text-center mx-auto mb-5" style="max-width: 600px;">-->
+  <!--    <h1 class="display-5 text-uppercase mb-4">Latest <span class="text-primary">Articles</span> From Our Blog-->
+  <!--      Post</h1>-->
+  <!--  </div>-->
   <div class="row g-5">
     <div class="col-lg-4 col-md-6">
       <div class="bg-light">
-        <img class="img-fluid" src="img/blog-1.jpg" alt="">
+        <img class="img-fluid" src="assets/images/plomber/p1.png" alt="">
         <div class="p-4">
           <div class="d-flex justify-content-between mb-4">
             <div class="d-flex align-items-center">
-              <img class="rounded-circle me-2" src="img/user.jpg" width="35" height="35" alt="">
+              <img class="rounded-circle me-2" src="assets/images/plomber/p1.png" width="35" height="35" alt="">
               <span>John Doe</span>
             </div>
             <div class="d-flex align-items-center">
@@ -568,7 +396,6 @@
 </div>
 <!-- Blog End -->
 
-
 <!-- Footer Start -->
 <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
   <div class="row g-5">
@@ -581,8 +408,7 @@
         dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
       <p><i class="fa fa-map-marker-alt me-2"></i>Location, City, Country</p>
       <p><i class="fa fa-phone-alt me-2"></i>+012 345 67890</p>
-      <p><i class="fa fa-envelope me-2"></i>info@example.com</p>
-      <div class="d-flex justify-content-start mt-4">
+      <p><i class="fa fa-envelope me-2"></i>info@example.com
         <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2"
            href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
         <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2"
@@ -591,6 +417,9 @@
            href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
         <a class="btn btn-lg btn-primary btn-lg-square rounded-0"
            href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube"></i></a>
+      </p>
+      <div class="d-flex justify-content-start mt-4">
+
       </div>
     </div>
     <div class="col-lg-6 ps-lg-5">
@@ -619,32 +448,11 @@
             <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
           </div>
         </div>
-        <div class="col-sm-12">
-          <h4 class="text-white text-uppercase mb-4">Newsletter</h4>
-          <div class="w-100">
-            <div class="input-group">
-              <input type="text" class="form-control border-light" style="padding: 20px 30px;"
-                     placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign
-              Up</button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
-  <div class="d-flex flex-column flex-md-row justify-content-between">
-    <div class="py-4 px-5 text-center text-md-start">
-      <p class="mb-0">&copy; <a class="text-primary" href="https://freewebsitecode.com/">Your Site Name</a>.
-        All Rights Reserved.</p>
-    </div>
-    <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
-      <p class="mb-0">Designed by <a class="text-dark" href="https://freewebsitecode.com">Free Website
-        Code</a></p>
-    </div>
-  </div>
-</div>
-<!-- Footer End -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+  <!-- Footer End -->
+  <a style="z-index: 1;" id="square" class="back-to-top" (click)="scrollToTop($event)">
+    <i class="bi bi-arrow-up square-value"></i>
+  </a>

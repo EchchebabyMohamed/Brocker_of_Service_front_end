@@ -4,13 +4,13 @@ import {HomeComponent} from "./components/home/home.component";
 import {ServicesComponent} from "./components/services/services.component";
 import {LoginComponent} from "./components/login/login.component";
 import {AuthGuard} from "./auth-guard.guard";
-import {LogoutComponent} from "./components/logout/logout.component";
+import {ServiceDetailsComponent} from "./components/service-details/service-details.component";
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent,canActivate:[AuthGuard] },
-  { path: 'services', component: ServicesComponent ,canActivate:[AuthGuard]},
+  { path: 'home', component: HomeComponent},
+  { path: 'services', component: ServicesComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'logout', component: LogoutComponent },
+  { path: 'services/:id', component: ServiceDetailsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

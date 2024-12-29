@@ -46,12 +46,6 @@
 .btn-primary {
   color: #FFFFFF;
 }
-
-.btn-square {
-  width: 36px;
-  height: 36px;
-}
-
 .btn-sm-square {
   width: 28px;
   height: 28px;
@@ -62,7 +56,6 @@
   height: 46px;
 }
 
-.btn-square,
 .btn-sm-square,
 .btn-lg-square {
   padding-left: 0;
@@ -186,4 +179,21 @@
   color: #000;
   background-color: #FD5D14;
   border-color: #FD5D14
+}
+#square {
+  background-color: #FD5D14;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+}
+.square-value{
+  display: block;
+  height: calc(100%);
+  width: calc(100%);
+  display: grid;
+  place-items: center;
 }

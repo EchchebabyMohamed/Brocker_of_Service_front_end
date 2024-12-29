@@ -1,4 +1,5 @@
 
+<div  >
 <div class="container-fluid px-5 d-none d-lg-block">
   <div class="row gx-5">
     <div class="col-lg-4 text-center py-3">
@@ -57,7 +58,7 @@
             <a href="detail.html" class="dropdown-item">Blog Detail</a>
           </div>
         </div>
-        <a *ngIf="loginservice.isLoggedIn" routerLink="/logout" class="nav-item nav-link">Log out</a>
+        <a *ngIf="loginservice.isLoggedIn" class="nav-item nav-link" (click)="funLogout()">Log out</a>
         <div class="nav-item nav-link me-5" ></div>
         <div class="nav-item nav-link me-5" ></div>
 
@@ -65,7 +66,7 @@
     </div>
   </nav>
 </div>
-
+</div>
 <!--<div class="container-fluid page-header">-->
 <!--  <h1 class="display-3 text-uppercase text-white mb-3">About</h1>-->
 <!--  <div class="d-inline-flex text-white">-->
